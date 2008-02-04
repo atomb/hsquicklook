@@ -3,8 +3,15 @@
 	089C1669FE841209C02AAC07 /* Project object */ = {
 		activeArchitecture = i386;
 		activeBuildConfigurationName = Release;
+		activeExecutable = 4CA93CEE0D554274003910CF /* qlmanage */;
 		activeTarget = 8D57630D048677EA00EA77CD /* HSQuickLook */;
+		addToTargets = (
+			8D57630D048677EA00EA77CD /* HSQuickLook */,
+		);
 		codeSenseManager = 4C9054EC0D552E8B0009C1D2 /* Code sense */;
+		executables = (
+			4CA93CEE0D554274003910CF /* qlmanage */,
+		);
 		perUserDictionary = {
 			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
 				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
@@ -28,8 +35,12 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 223686967;
-			PBXWorkspaceStateSaveDate = 223686967;
+			PBXPerProjectTemplateStateSaveDate = 223688815;
+			PBXWorkspaceStateSaveDate = 223688815;
+		};
+		perUserProjectItems = {
+			4CA93D1D0D55546F003910CF /* PBXBookmark */ = 4CA93D1D0D55546F003910CF /* PBXBookmark */;
+			4CA93D260D555631003910CF /* PBXTextBookmark */ = 4CA93D260D555631003910CF /* PBXTextBookmark */;
 		};
 		sourceControlManager = 4C9054EB0D552E8B0009C1D2 /* Source Control */;
 		userBuildSettings = {
@@ -51,11 +62,11 @@
 			sepNavWindowFrame = "{{61, 273}, {750, 558}}";
 		};
 	};
-	2C05A19B06CAA52B00D84F6F /* GeneratePreviewForURL.c */ = {
+	2C05A19B06CAA52B00D84F6F /* GeneratePreviewForURL.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {866, 690}}";
-			sepNavSelRange = "{695, 0}";
-			sepNavVisRange = "{0, 817}";
+			sepNavIntBoundsRect = "{{0, 0}, {866, 912}}";
+			sepNavSelRange = "{1247, 0}";
+			sepNavVisRange = "{412, 1569}";
 			sepNavWindowFrame = "{{15, 55}, {925, 818}}";
 		};
 	};
@@ -70,11 +81,76 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
+	4CA93CEE0D554274003910CF /* qlmanage */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+			YES,
+		);
+		argumentStrings = (
+			"-p /Users/atomb/projects/HSQuickLook/Test.hs",
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+			"PBXLSLaunchAction-0" = {
+				PBXLSLaunchAction = 0;
+				PBXLSLaunchStartAction = 1;
+				PBXLSLaunchStdioStyle = 2;
+				PBXLSLaunchStyle = 0;
+				class = PBXLSRunLaunchConfig;
+				commandLineArgs = (
+				);
+				displayName = "Executable Runner";
+				environment = {
+				};
+				identifier = com.apple.Xcode.launch.runConfig;
+				remoteHostInfo = "";
+				startActionInfo = "";
+			};
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		launchableReference = 4CA93CEF0D554274003910CF /* qlmanage */;
+		libgmallocEnabled = 0;
+		name = qlmanage;
+		savedGlobals = {
+		};
+		sourceDirectories = (
+		);
+	};
+	4CA93CEF0D554274003910CF /* qlmanage */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = "compiled.mach-o.executable";
+		name = qlmanage;
+		path = /usr/bin/qlmanage;
+		sourceTree = "<absolute>";
+	};
+	4CA93D1D0D55546F003910CF /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 2C05A19B06CAA52B00D84F6F /* GeneratePreviewForURL.m */;
+	};
+	4CA93D260D555631003910CF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2C05A19B06CAA52B00D84F6F /* GeneratePreviewForURL.m */;
+		name = "GeneratePreviewForURL.m: 33";
+		rLen = 0;
+		rLoc = 1247;
+		rType = 0;
+		vrLen = 1569;
+		vrLoc = 412;
+	};
 	61E3BCFA0870B4F2002186A0 /* GenerateThumbnailForURL.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {866, 690}}";
-			sepNavSelRange = "{566, 0}";
-			sepNavVisRange = "{0, 909}";
+			sepNavIntBoundsRect = "{{0, 0}, {862, 368}}";
+			sepNavSelRange = "{641, 0}";
+			sepNavVisRange = "{318, 589}";
 			sepNavWindowFrame = "{{12, 60}, {925, 818}}";
 		};
 	};
@@ -83,9 +159,9 @@
 	};
 	8D576317048677EA00EA77CD /* Info.plist */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {799, 1104}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 803}";
+			sepNavIntBoundsRect = "{{0, 0}, {785, 1552}}";
+			sepNavSelRange = "{658, 0}";
+			sepNavVisRange = "{403, 1040}";
 			sepNavWindowFrame = "{{15, 315}, {750, 558}}";
 		};
 	};
