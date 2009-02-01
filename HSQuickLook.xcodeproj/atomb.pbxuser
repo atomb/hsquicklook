@@ -1,7 +1,6 @@
 // !$*UTF8*$!
 {
 	089C1669FE841209C02AAC07 /* Project object */ = {
-		activeArchitecture = i386;
 		activeBuildConfigurationName = Release;
 		activeExecutable = 4CA93CEE0D554274003910CF /* qlmanage */;
 		activeTarget = 8D57630D048677EA00EA77CD /* HSQuickLook */;
@@ -35,12 +34,12 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 223965593;
-			PBXWorkspaceStateSaveDate = 223965593;
+			PBXPerProjectTemplateStateSaveDate = 239822463;
+			PBXWorkspaceStateSaveDate = 239822463;
 		};
 		perUserProjectItems = {
-			4C43FD020D597BFA0048F7CA /* PBXTextBookmark */ = 4C43FD020D597BFA0048F7CA /* PBXTextBookmark */;
-			4CA93D260D555631003910CF /* PBXTextBookmark */ = 4CA93D260D555631003910CF /* PBXTextBookmark */;
+			4C601D2D0E4B66FC0042A7D2 /* PBXTextBookmark */ = 4C601D2D0E4B66FC0042A7D2 /* PBXTextBookmark */;
+			4CDF5B560D640F08005723AC /* PBXTextBookmark */ = 4CDF5B560D640F08005723AC /* PBXTextBookmark */;
 		};
 		sourceControlManager = 4C9054EB0D552E8B0009C1D2 /* Source Control */;
 		userBuildSettings = {
@@ -64,21 +63,21 @@
 	};
 	2C05A19B06CAA52B00D84F6F /* GeneratePreviewForURL.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {866, 1600}}";
-			sepNavSelRange = "{439, 0}";
-			sepNavVisRange = "{1914, 1512}";
+			sepNavIntBoundsRect = "{{0, 0}, {866, 1712}}";
+			sepNavSelRange = "{2067, 0}";
+			sepNavVisRange = "{0, 1616}";
 			sepNavWindowFrame = "{{15, 60}, {925, 818}}";
 		};
 	};
-	4C43FD020D597BFA0048F7CA /* PBXTextBookmark */ = {
+	4C601D2D0E4B66FC0042A7D2 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 2C05A19B06CAA52B00D84F6F /* GeneratePreviewForURL.m */;
-		name = "GeneratePreviewForURL.m: 13";
+		name = "GeneratePreviewForURL.m: 59";
 		rLen = 0;
-		rLoc = 439;
+		rLoc = 2067;
 		rType = 0;
-		vrLen = 1512;
-		vrLoc = 1914;
+		vrLen = 1616;
+		vrLoc = 0;
 	};
 	4C9054EB0D552E8B0009C1D2 /* Source Control */ = {
 		isa = PBXSourceControlManager;
@@ -142,15 +141,15 @@
 		path = /usr/bin/qlmanage;
 		sourceTree = "<absolute>";
 	};
-	4CA93D260D555631003910CF /* PBXTextBookmark */ = {
+	4CDF5B560D640F08005723AC /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 2C05A19B06CAA52B00D84F6F /* GeneratePreviewForURL.m */;
-		name = "GeneratePreviewForURL.m: 33";
+		name = "GeneratePreviewForURL.m: 44";
 		rLen = 0;
-		rLoc = 2490;
+		rLoc = 1615;
 		rType = 0;
-		vrLen = 1569;
-		vrLoc = 412;
+		vrLen = 1567;
+		vrLoc = 413;
 	};
 	61E3BCFA0870B4F2002186A0 /* GenerateThumbnailForURL.c */ = {
 		uiCtxt = {

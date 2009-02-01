@@ -14,9 +14,10 @@ NSString *FindHsColour()
     NSArray *searchDirs;
     NSString *homeDir;
     NSFileManager *fm;
-    
+    NSBundle *mainBundle;
+
     fm = [NSFileManager defaultManager];
-    
+
     // 1. If configuration variable is set, use it. XXX: implement this last.
     // 2. If it's in any one of a predefined list of paths, use it. (Search in order)
     homeDir = NSHomeDirectory();
@@ -36,9 +37,15 @@ NSString *FindHsColour()
         }
         //NSLog(@"Not found");
     }
-    
-    // 3. Otherwise, return NULL to indicate that HsColour can't be found.
-    return NULL;
+
+    // 3. If it's in the application bundle, use it from there.
+    mainBundle = [NSBundle mainBundle];
+    if(mainBundle != nil) {
+        return [mainBundle pathForAuxiliaryExecutable: @"HsColour"];
+    }
+
+    // 4. Otherwise, return nil to indicate that HsColour can't be found.
+    return nil;
 }
 
 OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview, CFURLRef url,
@@ -52,18 +59,18 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
     NSData *htmlData;
     NSPipe *pipe;
     NSString *hsColourPath;
-    
+
     pool = [[NSAutoreleasePool alloc] init];
-    
-    if (QLPreviewRequestIsCancelled(preview))
-        return noErr;
-    
-    hsColourPath = FindHsColour();
- 
+
     if (QLPreviewRequestIsCancelled(preview))
         return noErr;
 
-    if(hsColourPath != NULL) {
+    hsColourPath = FindHsColour();
+
+    if (QLPreviewRequestIsCancelled(preview))
+        return noErr;
+
+    if(hsColourPath != nil) {
         fileRef = CFURLCopyFileSystemPath(url, kCFURLPOSIXPathStyle);
         hsColour = [[[NSTask alloc] init] autorelease];
         [hsColour setLaunchPath: FindHsColour()];
@@ -79,7 +86,7 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
         NSString *notFound = @"<p>HsColour not found</p>";
         htmlData = [notFound dataUsingEncoding: NSUTF8StringEncoding];
     }
-    
+
     if (QLPreviewRequestIsCancelled(preview))
         return noErr;
 
